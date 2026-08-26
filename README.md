@@ -11,8 +11,7 @@ npm run seed
 npm run dev
 ```
 
-API: http://localhost:5001 (macOS AirPlay often occupies 5000)
-
+API: http://localhost:5001 
 ## 2. Frontend
 
 ```bash
