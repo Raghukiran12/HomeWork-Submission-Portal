@@ -1,0 +1,268 @@
+:root {
+  --primary: #2563eb;
+  --primary-soft: #e0ecff;
+  --success: #16a34a;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  --muted: #64748b;
+  --dark: #0f172a;
+  --surface: #ffffff;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+.card-header {
+  background: transparent;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+  padding: 1rem 1.25rem;
+}
+
+.btn-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-outline-primary {
+  color: var(--primary);
+  border-color: rgba(37, 99, 235, 0.4);
+}
+
+.badge {
+  font-weight: 600;
+}
+
+.navbar .btn-link {
+  color: white;
+}
+
+.table th,
+.table td {
+  vertical-align: middle;
+}
+
+.form-control,
+.form-select,
+textarea {
+  border-radius: 10px;
+  border: 1px solid #dfe7f1;
+}
+
+.form-control:focus,
+.form-select:focus,
+textarea:focus {
+  box-shadow: 0 0 0 0.15rem rgba(37, 99, 235, 0.15);
+  border-color: #8fb4ff;
+}
+
+.page-header {
+  margin-bottom: 1.25rem;
+}
+
+.page-header h2 {
+  margin: 0;
+}
+
+/* Grades & Feedback theming tweaks */
+.stat-card {
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(18, 32, 67, 0.04);
+  border: 1px solid rgba(37,99,235,0.06);
+}
+.stat-card .stat-value {
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+.stat-card .stat-icon i {
+  font-size: 1.6rem;
+  color: var(--primary);
+}
+
+.dashboard-card {
+  border-radius: 12px;
+  border: 1px solid rgba(148,163,184,0.08);
+}
+
+.list-group-item {
+  background: transparent;
+  border: 0;
+  padding: 18px 20px;
+}
+.list-group-item + .list-group-item {
+  border-top: 1px solid rgba(148,163,184,0.06);
+}
+
+.grades-circle {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.grade-badge {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 18px;
+  font-weight: 700;
+}
+
+.bg-success-subtle {
+  background: #e6fbef;
+  color: var(--success);
+}
+
+/* small responsive tweaks */
+@media (max-width: 991px) {
+  .grades-circle { width: 40px; height: 40px; font-size: 0.7rem; }
+}
+
+.app-shell {
+  grid-template-columns: 220px 1fr;
+  grid-template-rows: 56px 1fr;
+}
+
+.app-shell .topbar {
+  padding: 0 16px 0 18px;
+}
+
+.app-shell .topbar .brand {
+  font-size: 1.05rem;
+}
+
+.app-shell .content {
+  padding: 16px 18px 20px;
+}
+
+.app-shell #page-content {
+  gap: 12px;
+}
+
+.app-shell .page-header {
+  margin-bottom: 0.35rem;
+}
+
+.app-shell .page-header h2,
+.app-shell #page-content h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.app-shell .sidebar {
+  padding: 10px 8px;
+}
+
+.app-shell .sidebar .nav {
+  gap: 2px;
+}
+
+.app-shell .sidebar .nav-link {
+  padding: 7px 10px;
+  font-size: 0.88rem;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.app-shell .sidebar .nav-link i {
+  font-size: 0.95rem;
+}
+
+.app-shell .stat-card,
+.app-shell .dashboard-card,
+.app-shell .dashboard-stat-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.03);
+}
+
+.app-shell .stat-card .card-body,
+.app-shell .dashboard-stat-card .card-body {
+  padding: 0.7rem 0.8rem;
+  gap: 8px;
+}
+
+.app-shell .stat-card .stat-value,
+.app-shell .dashboard-stat-card .stat-value {
+  margin-top: 0.15rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.app-shell .stat-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.app-shell .stat-card .text-muted {
+  font-size: 0.68rem;
+}
+
+.app-shell .dashboard-card .card-header {
+  padding: 0.65rem 0.9rem;
+}
+
+.app-shell .dashboard-card .card-header h5,
+.app-shell #page-content h5 {
+  font-size: 0.95rem;
+}
+
+.app-shell .list-group-item {
+  padding: 0.55rem 0.9rem;
+}
+
+.app-shell .list-group-item .status-badge {
+  align-self: center;
+}
+
+.app-shell .list-group-item strong {
+  font-size: 0.9rem;
+}
+
+.app-shell .content .badge,
+.app-shell .status-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: auto !important;
+  height: auto !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  white-space: nowrap;
+  border-radius: 999px;
+  padding: 0.18rem 0.55rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+
+.app-shell .status-badge--pending { background: #e2e8f0; color: #475569; }
+.app-shell .status-badge--submitted { background: #e0f2fe; color: #0369a1; }
+.app-shell .status-badge--late { background: #fef3c7; color: #b45309; }
+.app-shell .status-badge--overdue { background: #fee2e2; color: #b91c1c; }
+.app-shell .status-badge--graded,
+.app-shell .status-badge--active { background: #dcfce7; color: #15803d; }
+.app-shell .status-badge--draft { background: #e2e8f0; color: #64748b; }
+
+.app-shell .dashboard-table thead th,
+.app-shell .dashboard-table tbody td {
+  padding: 0.5rem 0.7rem;
+}
+
+.app-shell .btn-sm {
+  min-height: 0;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.78rem;
+}
+
+.app-shell .btn:not(.btn-sm) {
+  min-height: 0;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.85rem;
+}
