@@ -35,6 +35,6 @@ VITE_API_URL=http://localhost:5001/api
 
 | Role | Email | Password |
 | --- | --- | --- |
-| Student | ava@student.com | password123 |
-| Teacher | noah@teacher.com | password123 |
-| Admin | olivia@admin.com | password123 |
+| Student | raghukiran188@gmail.com | raGhu@1227 |
+| Teacher | ramith@teacher.com | password123 |
+| Admin | admin@homework.com | password123 |
